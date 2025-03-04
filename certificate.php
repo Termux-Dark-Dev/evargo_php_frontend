@@ -319,6 +319,15 @@ $role = $_SESSION['role'];
                     fontFamily: "'Poppins', sans-serif",
                     color: '#FFFFFF',
                     weight: 'bold'
+                },
+                partnerTitle: {
+                    x:650,
+                    y: 570,
+                    maxWidth: 900,
+                    fontSize: 66,
+                    fontFamily: "'Poppins', sans-serif",
+                    color: '#000000',
+                    weight: 'bold'
                 }
             };
 
@@ -438,6 +447,17 @@ $role = $_SESSION['role'];
                     textConfig.role.fontFamily,
                     textConfig.role.color,
                     textConfig.role.weight
+                );
+
+                drawCenteredText(
+                    `is appointed as an authorized ${userData.role} of Evargo Services.`,
+                    textConfig.partnerTitle.x,
+                    textConfig.partnerTitle.y,
+                    textConfig.partnerTitle.maxWidth,
+                    textConfig.partnerTitle.fontSize,
+                    textConfig.partnerTitle.fontFamily,
+                    textConfig.partnerTitle.color,
+                    textConfig.partnerTitle.weight
                 );
                 
                 hideLoading();
